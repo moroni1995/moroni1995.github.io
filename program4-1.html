@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT 160 Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 4: Add Two Numbers</h1>
+        <h2>Vinicius Alves</h2>
+    </header>
+    <main>
+        <h3>Add Two Numbers</h3>
+        <label>Enter Number One: <input type="text" id="number1"></label>
+      <label>Enter Number Two: <input type="text" id="number2"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Vinicius Alves &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function addNumbers(){
+            //Input -> Store information from text input
+            let n1 = parseFloat(document.getElementById('number1').value); 
+            let n2 = parseFloat(document.getElementById('number2').value);
+            
+            //Process -> Add the two numbers together
+            let total = n1 + n2;
+
+            //Output -> Displays the result in a HTML element
+            document.getElementById('output').innerHTML = `${n1} + ${n2} = ${total}`; //string interpolation
+        }
+    </script>
+</body>
+</html>
