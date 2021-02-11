@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 6: Weather Shoes</h1>
+        <h2>Vinicius Alves</h2>
+    </header>
+    <main>
+        <h3>Weather Shoes</h3>
+        <!--<label for="weather">Choose a weather:</label>-->
+        <label>Choose a weather: <select onclick="findShoes()" name="weather" id="weather-select"></label>
+            <option value="" disabled selected hidden>--Please choose an option--</option>
+            <option value="hot">hot</option>
+            <option value="rain">rain</option>
+            <option value="snow">snow</option>
+            <option value="unknown">unknown</option>
+        </select>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Vinicius Alves &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/weatherShoes.js"></script>
+</body>
+</html>
