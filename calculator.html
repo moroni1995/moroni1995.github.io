@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 6: Simple Calc</h1>
+        <h2>Vinicius Alves</h2>
+    </header>
+    <main style="max-width: 550px;">
+        <h3>Simple Calculator</h3>
+        <input placeholder="Enter Number One" type="text" id="number1" size="15">
+        <select name="arithmetic-operator" id="operator">
+            <option value="" >Operator</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="-">*</option>
+        </select>
+        <input placeholder="Enter Number Two" type="text" id="number2" size="15">
+        =
+        <input placeholder="Enter the Answer" type="text" id="answer" size="15"></label>
+        <label><button onclick="checkAnswer()">Check Answer</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Vinicius Alves &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/simpleCalc.js"></script>
+</body>
+
+</html>
