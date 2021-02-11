@@ -1,7 +1,7 @@
 function findShoes() {
     //INPUT = Get user input of select element
     let weather = document.getElementById('weather-select').value;
-    let footwear = 'No weather selected';
+    let footwear;
 
     //PROCESS = Compares user input or weather variable and set footwear that matches with selected weather
     switch (weather) {
