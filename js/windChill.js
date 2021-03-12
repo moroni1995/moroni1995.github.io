@@ -6,11 +6,12 @@ function doInputOutput() {
 
     if (temperature < 50 && windspeed > 3) {
         windchill = windChill(temperature, windspeed);
+        windchill += " Fº"
     } else {
         windchill = "Wind chill is not calculated for temperatures above 50 degrees Fahrenheit nor for wind speeds below 3 miles per hour. ";
     }
     //OUTPUT
-    document.getElementById('output').innerHTML = `${windchill} Fº`;
+    document.getElementById('output').innerHTML = windchill;
 
 }
 //PROCESSING
