@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT 160 Assignments</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 11</h1>
+        <h2>Vinicius Alves</h2>
+    </header>
+    <main>
+        <h3>Investment Calculator</h3>
+        <label style="font-size: larger;">Amount invested (principal) <input type="text" id="invested" style="width: 60px; height: 25px;"></label>
+        <label style="font-size: larger;">Annual rate (example:.08) <input type="text" id="annualRate" style="width: 60px; height: 25px;"></label>
+        <label style="font-size: larger;">Number of years <input type="text" id="numberYears" style="width: 60px; height: 25px;"></label>
+        <label style="font-size: larger;">Periods per year <input type="text" id="periodsYear" style="width: 60px; height: 25px;"></label>
+        <label><button onclick="doFV()" style="font-size: medium;">Compute future value</button></label>
+        <hr>
+        <p><span id="output" style="font-size: larger;"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Vinicius Alves &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/invest.js"></script>
+</body>
+</html>
