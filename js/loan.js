@@ -32,7 +32,7 @@ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPa
     let n = periodsPerYear * years;
     let d = numberOfPaymentPaidToDate;
     let p = computePayment(principal, annualRate, years, periodsPerYear);
-    let b = (a * Math.pow(1 + r, d) - ((p * (((1 + r)**d) - 1 ))/r));
+    let b = a * Math.pow(1 + r, d) - (p.toFixed(2) * (Math.pow(1 + r, d) - 1)) / r;
 
     return b
 }
