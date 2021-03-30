@@ -14,7 +14,7 @@
     </header>
     <main>
         <h3>Arrays</h3>
-        <label><button style="font-size: medium; margin-top: 5px;" onclick="test()">Run Test</button></label>
+        <label><button style="font-size: medium; margin-top: 5px;" onclick="test()">Test Arrays</button></label>
         <hr>
         <p><span id='output'></span></p>
     </main>
@@ -55,19 +55,12 @@
         }
 
         function getMiddle(list) {
-            if (list.length % 2 != 0) {
-                return list[parseInt(list.length / 2)]
+            if (list.length % 2 == 0) {
+                let sum = list[list.length / 2] + list[list.length / 2 - 1];
+                return sum / 2;
             }
             else {
-                let firstMiddle = list[parseInt(list.length / 2 - 1)];
-                let secondMiddle = list[parseInt(list.length / 2)];
-                let newList = [];
-
-                for (let i = firstMiddle; i <= secondMiddle; i++) {
-                    newList.push(i)
-                }
-
-                return getMiddle(newList)
+                return list[Math.floor(list.length / 2)];
             }
         }
     </script>
